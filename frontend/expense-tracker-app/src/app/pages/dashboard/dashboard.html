@@ -1,0 +1,70 @@
+<div class="dashboard">
+<div class="flex-flex-col">
+  <h1>💰 Expense Tracker</h1>
+
+
+  <!-- Summary Cards -->
+  <div class="cards">
+
+    <div class="">
+      <label>Total Expenses</label>
+      <input type="text" formControlName="title" placeholder="Total Expenses"
+  />
+      <h1>{{totalExpenses}}</h1>
+    </div>
+
+    <div class="card">
+        <label>This Month</label>
+
+      <h1>{{thisMonth}}</h1>
+    </div>
+
+    <div class="card">
+      <label>Budget Left</label>
+      <h1>₹{{budgetLeft}}</h1>
+    </div>
+
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <button routerLink="/add">➕ Add Expense</button>
+    <button routerLink="/list">📋 View Expenses</button>
+  </div>
+
+  <!-- Table -->
+  <div class="table-section">
+
+    <h2>Recent Expenses</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Amount</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Food</td>
+          <td>Food</td>
+          <td>₹200</td>
+          <td>14-Jun</td>
+        </tr>
+
+        <tr>
+          <td>Travel</td>
+          <td>Bus</td>
+          <td>₹50</td>
+          <td>13-Jun</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
